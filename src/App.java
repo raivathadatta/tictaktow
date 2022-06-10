@@ -7,7 +7,7 @@ public class App {
            board[i]= ' ';
        }
        Scanner sc= new Scanner(System.in);
-      char playerCharacter= chooseLetter(sc);
+      var playerCharacter= chooseLetter(sc);
       
 
       char systemChar= (playerCharacter=='x')?'o':'x';
