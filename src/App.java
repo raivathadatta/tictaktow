@@ -11,8 +11,17 @@ public class App {
       
 
       char systemChar= (playerCharacter=='x')?'o':'x';
+
+      showBoard(board);
       //System.in is a standard input stream.
     //    System.out.print("Enter a string: ");
+    }
+
+    private static void showBoard(char[] board) {
+      System.out.println("***TicTacToe Board***");
+      System.out.println("|  ${board[1]}  ||  ${board[2]}  ||  ${board[3]}  |");
+      System.out.println("|  ${board[4]}  ||  ${board[5]}  ||  ${board[6]}  |");
+      System.out.println("|  ${board[7]}  ||  ${board[8]}  ||  ${board[9]}  |");
     }
 
     private static char chooseLetter(Scanner sc) {
